@@ -1,0 +1,38 @@
+{
+	"name": "LazyImages",
+	"version": "0.1.0",
+	"author": "Corey Chambers <corey@flexwiki.org>",
+	"url": "https://yugipedia.com/wiki/User:Corey/LazyImages",
+	"descriptionmsg": "lazyimages-desc",
+	"type": "media",
+	"MessagesDirs": {
+		"LazyImages": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"LazyImages": "LazyImages.hooks.php"
+	},
+	"ResourceModules": {
+		"ext.lazyload": {
+			"scripts": [
+				"lazyload.js"
+			],
+			"targets": [
+				"desktop"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "LazyImages/modules"
+	},
+	"Hooks": {
+		"ThumbnailBeforeProduceHTML": [
+			"LazyImages::ThumbnailBeforeProduceHTML"
+		],
+		"BeforePageDisplay": [
+			"LazyImages::BeforePageDisplay"
+		]
+	}
+}
