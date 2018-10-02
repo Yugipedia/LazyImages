@@ -2,7 +2,7 @@
 	"name": "LazyImages",
 	"version": "0.1.0",
 	"author": "Corey Chambers <corey@flexwiki.org>",
-	"url": "https://yugipedia.com/wiki/User:Corey/LazyImages",
+	"url": "https://github.com/Yugipedia/LazyImages",
 	"descriptionmsg": "lazyimages-desc",
 	"type": "media",
 	"MessagesDirs": {
