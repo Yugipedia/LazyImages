@@ -58,7 +58,7 @@
   }
 
     var images = new Array()
-      , query = $q('img')
+      , query = $q('img.lazy')
       , processScroll = function(){
           for (var i = 0; i < images.length; i++) {
             if (elementInViewport(images[i])) {
